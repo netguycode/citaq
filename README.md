@@ -8,9 +8,9 @@ If theres something missing which you'd like to add, raise an issue on the githu
 # Useful Info
 ** Im using the H10-3 (Menulog-AU Order Device) **
 
-## Reboot into Recovery ROM 
 ** Careful, this process may be different for you. **
 
+## Reboot into Recovery ROM 
 So it seems citaq have included some sort of recovery ROM once you wipe the device. As you would expect, it includes an oudated copy of Soti MobiControl software, a factory app to test the device, standard android utilities and a simple APK management utility. The factory app had a few more features than I was expecting but hinted nothing towards an SDK (I was being very hopeful.) I will include a copy of the factory app in the "software" folder in this repo.
 
 #### This is what I did to reimage my device to recovery:
