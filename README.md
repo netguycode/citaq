@@ -27,19 +27,19 @@ Device successfully reimaged into recovery ROM.
 
 |        |  |
 | ------------- | -----:|
-| ![Recovery Screen](/Images/H8aob5nm.jpg)
-  | ![Specs](/Images/spec.png) |
-
-
-
-####  Advice found at: https://leeatljs.blogspot.com/2020/10/factory-reset-citaq-h10.html (Comments section)
+| ![Recovery Screen](/Images/H8aob5nm.jpg) | ####  Advice found at: https://leeatljs.blogspot.com/2020/10/factory-reset-citaq-h10.html (Comments section)
 1. Go To Just Eat WiFi Settings - Go To Top Right Add Network
 2. It Will then try to load their Mobile Control App
 3. Go To Bottom left the Return Curly Arrow
 4. keep hitting it until iy takes you to the normal start page
 5. Go to Settings > Apps
 6. Uninstall all Just Eat Apps - there are about 4
-7. Then Go to do reset 
+7. Then Go to do reset |
+| ![Specs](/Images/spec.png) | |
+
+
+
+
 
 I after doing this I have found Bluetooth, WiFi & Ethernet to be very buggy. I decided to look at the TF card that was attached to the device. I saw there was a copy of the MobiControl software and a random APN package. I installed the APN package and the network & wireless issues persist. I'm currently looking for solutions and/or hardware drivers on the internet (just need to crack open the device and get a few part numbers now).
 
