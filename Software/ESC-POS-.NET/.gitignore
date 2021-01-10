@@ -1,0 +1,7 @@
+.vs/
+.idea/
+**/obj/
+**/bin/
+push.ps1
+/push.txt
+/ESCPOS_NET/ESCPOS_NET.csproj.user
