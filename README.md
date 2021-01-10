@@ -24,6 +24,14 @@ So it seems citaq have included some sort of recovery ROM once you wipe the devi
 
 Device successfully reimaged into recovery ROM.
 
+
+|        |  |
+| ------------- | -----:|
+| ![alt text](https://github.com/orbing/citaq/raw/master/Images/H8aob5nm.jpg "Recovery Screen")
+  | ![alt text](https://github.com/orbing/citaq/raw/master/Images/specs.png "Specs") |
+
+
+
 ####  Advice found at: https://leeatljs.blogspot.com/2020/10/factory-reset-citaq-h10.html (Comments section)
 1. Go To Just Eat WiFi Settings - Go To Top Right Add Network
 2. It Will then try to load their Mobile Control App
