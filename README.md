@@ -20,14 +20,14 @@ FYI: Im using the H10-3 (Menulog-AU Order Device)
 
 Device successfully reimaged into recovery ROM.
 
-## Found at: https://leeatljs.blogspot.com/2020/10/factory-reset-citaq-h10.html
-Go To Just Eat WiFi Settings - Go To Top Right Add Network
-It Will then try to load their Mobile Control App
-Go To Bottom left the Return Curly Arrow
-keep hitting it until iy takes you to the normal start page
-Go to Settings > Apps
-Uninstall all Just Eat Apps - there are about 4
-Then Go to do reset 
+** Found at: https://leeatljs.blogspot.com/2020/10/factory-reset-citaq-h10.html
+1. Go To Just Eat WiFi Settings - Go To Top Right Add Network
+2. It Will then try to load their Mobile Control App
+3. Go To Bottom left the Return Curly Arrow
+4. keep hitting it until iy takes you to the normal start page
+5. Go to Settings > Apps
+6. Uninstall all Just Eat Apps - there are about 4
+7. Then Go to do reset 
 
 
-Disclaimer: I am not affiliated in anyway with Citaq or Menulog(AU)/JustEat(Int). I do not endorse modifying your device as it may viod any and all warranties that the device may have had prior. This may also be a breach in your Menulog(AU)/JustEat(Int) contract (if you are a resturant partner), so please proceed with caution.
+** Disclaimer: I am not affiliated in anyway with Citaq or Menulog(AU)/JustEat(Int). I do not endorse modifying your device as it may viod any and all warranties that the device may have had prior. This may also be a breach in your Menulog(AU)/JustEat(Int) contract (if you are a resturant partner), so please proceed with caution.
