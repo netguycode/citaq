@@ -11,6 +11,10 @@ If theres something missing which you'd like to add, raise an issue on the githu
 ## Reboot into Recovery ROM 
 ** Careful, this process may be different for you. **
 
+So it seems citaq have included some sort of recovery ROM once you wipe the device. As you would expect, it includes an oudated copy of Soti MobiControl software, a factory app to test the device, standard android utilities and a simple APK management utility. The factory app had a few more features than I was expecting but hinted nothing towards an SDK (I was being very hopeful.) I will include a copy of the factory app in the "software" folder in this repo.
+
+This is what I did to reimage my device to recovery:
+
 1. Open and lift the top panel. Extend completely - use caution and take it slow.
 2. On the underside of the top panel, find a small grey rectangle that contains the words "SIM Card" and "TF Card". Uscrew this.
 3. While powered-off, locate the button under tgis panel that reads "Recovery".
@@ -20,7 +24,7 @@ If theres something missing which you'd like to add, raise an issue on the githu
 
 Device successfully reimaged into recovery ROM.
 
-** Found at: https://leeatljs.blogspot.com/2020/10/factory-reset-citaq-h10.html
+#### Found at: https://leeatljs.blogspot.com/2020/10/factory-reset-citaq-h10.html
 1. Go To Just Eat WiFi Settings - Go To Top Right Add Network
 2. It Will then try to load their Mobile Control App
 3. Go To Bottom left the Return Curly Arrow
