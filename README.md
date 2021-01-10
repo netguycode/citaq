@@ -9,19 +9,14 @@ If theres something missing which you'd like to add, raise an issue on the githu
 FYI: Im using the H10-3 (Menulog-AU Order Device)
 
 ## Reboot into Recovery ROM 
-### Careful, this process may be different for you.
+** Careful, this process may be different for you. **
 
-a. Open and lift the top panel. Extend completely - use caution and take it slow.
-
-b. On the underside of the top panel, find a small grey rectangle that contains the words "SIM Card" and "TF Card". Uscrew this.
-
-c. While powered-off, locate the button under tgis panel that reads "Recovery".
-
-d. Hold the "Recovery" button while powering-on the device - do not let go until you see the recovery menu.
-
-e. Plug-in a USB keyboard. Navigate to and select, "Format/Wipe Cache" and "Format/Wipe System".
-
-f. Navigate to "Reboot"
+1. Open and lift the top panel. Extend completely - use caution and take it slow.
+2. On the underside of the top panel, find a small grey rectangle that contains the words "SIM Card" and "TF Card". Uscrew this.
+3. While powered-off, locate the button under tgis panel that reads "Recovery".
+4. Hold the "Recovery" button while powering-on the device - do not let go until you see the recovery menu.
+5. Plug-in a USB keyboard. Navigate to and select, "Format/Wipe Cache" and "Format/Wipe System".
+6. Navigate to "Reboot"
 
 Device successfully reimaged into recovery ROM.
 
