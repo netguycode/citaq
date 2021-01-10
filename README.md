@@ -27,8 +27,8 @@ Device successfully reimaged into recovery ROM.
 
 |        |  |
 | ------------- | -----:|
-| ![alt text](https://github.com/orbing/citaq/raw/master/Images/H8aob5nm.jpg "Recovery Screen")
-  | ![alt text](https://github.com/orbing/citaq/raw/master/Images/specs.png "Specs") |
+| ![Recovery Screen](/Images/H8aob5nm.jpg)
+  | ![Specs](/Images/specs.png) |
 
 
 
