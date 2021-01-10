@@ -6,7 +6,7 @@ If theres something missing which you'd like to add, raise an issue on the githu
 
 
 # Useful Info
-FYI: Im using the H10-3 (Menulog-AU Order Device)
+** Im using the H10-3 (Menulog-AU Order Device) **
 
 ## Reboot into Recovery ROM 
 ** Careful, this process may be different for you. **
@@ -29,5 +29,12 @@ Device successfully reimaged into recovery ROM.
 6. Uninstall all Just Eat Apps - there are about 4
 7. Then Go to do reset 
 
+## Print Proxy
 
-** Disclaimer: I am not affiliated in anyway with Citaq or Menulog(AU)/JustEat(Int). I do not endorse modifying your device as it may viod any and all warranties that the device may have had prior. This may also be a breach in your Menulog(AU)/JustEat(Int) contract (if you are a resturant partner), so please proceed with caution.
+This app works great as an interface between the in-built serial (thermal) printer and your device. It costs Euro14.99 and works as it says on the website. https://citaq.co.uk/
+
+Ive included the most up to date version avaliable. See "Software' folder.
+
+
+## Disclaimer
+I am not affiliated in anyway with Citaq or Menulog(AU)/JustEat(Int). I do not endorse modifying your device as it may viod any and all warranties that the device may have had prior. This may also be a breach in your Menulog(AU)/JustEat(Int) contract (if you are a resturant partner), so please proceed with caution.
