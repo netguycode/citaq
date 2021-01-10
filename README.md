@@ -28,7 +28,7 @@ Device successfully reimaged into recovery ROM.
 |        |  |
 | ------------- | -----:|
 | ![Recovery Screen](/Images/H8aob5nm.jpg)
-  | ![Specs](/Images/specs.png) |
+  | ![Specs](/Images/spec.png) |
 
 
 
