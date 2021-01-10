@@ -12,11 +12,17 @@ FYI: Im using the H10-3 (Menulog-AU Order Device)
 ### Careful, this process may be different for you.
 
 a. Open and lift the top panel. Extend completely - use caution and take it slow.
+
 b. On the underside of the top panel, find a small grey rectangle that contains the words "SIM Card" and "TF Card". Uscrew this.
+
 c. While powered-off, locate the button under tgis panel that reads "Recovery".
+
 d. Hold the "Recovery" button while powering-on the device - do not let go until you see the recovery menu.
+
 e. Plug-in a USB keyboard. Navigate to and select, "Format/Wipe Cache" and "Format/Wipe System".
+
 f. Navigate to "Reboot"
+
 Device successfully reimaged into recovery ROM.
 
 ## Found at: https://leeatljs.blogspot.com/2020/10/factory-reset-citaq-h10.html
