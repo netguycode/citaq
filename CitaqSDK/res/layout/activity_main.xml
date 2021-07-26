@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_led"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:textSize="28sp"
+        android:text="@string/title_led"
+        />
+
+    <Button
+        android:id="@+id/bt_print"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:textSize="28sp"
+        android:text="@string/title_print"/>
+
+    <Button
+        android:id="@+id/bt_touch"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:textSize="28sp"
+        android:text="@string/title_touch"/>
+
+    <Button
+        android:id="@+id/bt_display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:textSize="28sp"
+        android:text="@string/title_display"/>
+
+    <Button
+        android:id="@+id/bt_music"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:textSize="28sp"
+         android:text="@string/title_music"/>
+    
+    <Button
+        android:id="@+id/bt_pd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:textSize="28sp"
+        android:text="@string/title_pd"/>
+    
+    <Button
+        android:id="@+id/bt_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        android:textSize="28sp"
+        android:text="@string/title_info"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/touchBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" 
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/toolbar_v">
+        
+        <ImageView 
+            android:id="@+id/button_clear"
+        	android:layout_width="@dimen/png_hw2"
+        	android:layout_height="@dimen/png_hw2"
+        	android:src="@drawable/clear"
+        	android:layout_marginTop="30dp"
+        	android:layout_marginBottom="30dp"
+            />
+        
+        <ImageView 
+            android:id="@+id/button_save"
+        	android:layout_width="@dimen/png_hw2"
+        	android:layout_height="@dimen/png_hw2"
+        	android:src="@drawable/save"
+        	android:layout_marginTop="30dp"
+        	android:layout_marginBottom="30dp"
+            />
+        <ImageView 
+            android:id="@+id/button_back"
+        	android:layout_width="@dimen/png_hw2"
+        	android:layout_height="@dimen/png_hw2"
+        	android:src="@drawable/back"
+        	android:layout_marginTop="30dp"
+        	android:layout_marginBottom="30dp"
+            />
+</LinearLayout>

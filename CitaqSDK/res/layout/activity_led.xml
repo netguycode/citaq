@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_20">
+
+        <ImageView
+             android:id="@+id/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/red" />
+
+        <TextView
+            android:id="@+id/tv_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/red"
+            android:text="@string/red"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tx_size_32"
+            android:textStyle="bold"  
+            android:layout_marginLeft="@dimen/margin_40"
+            android:layout_marginRight="@dimen/margin_40"/>
+
+        <ToggleButton
+            android:id="@+id/tb_red"
+            android:layout_width="@dimen/togglebutton_width"
+            android:layout_height="@dimen/togglebutton_height"
+            android:layout_toRightOf="@id/tv_red"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/togglebutton_selector" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_20">
+
+        <ImageView
+            android:id="@+id/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blue" />
+
+        <TextView
+            android:id="@+id/tv_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/blue"
+            android:text="@string/blue" 
+             android:textColor="@android:color/black"
+            android:textSize="@dimen/tx_size_32"
+            android:textStyle="bold" 
+            android:layout_marginLeft="@dimen/margin_40"
+             android:layout_marginRight="@dimen/margin_40"/>
+
+        <ToggleButton
+             android:id="@+id/tb_blue"
+            android:layout_width="@dimen/togglebutton_width"
+            android:layout_height="@dimen/togglebutton_height"
+            android:layout_toRightOf="@id/tv_blue"
+ 			android:textOn=""
+            android:textOff=""
+            android:background="@drawable/togglebutton_selector"/>
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_20">
+
+        <ImageView
+            android:id="@+id/fresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fresh" />
+
+        <TextView
+            android:id="@+id/tv_fresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fresh"
+            android:text="@string/fresh" 
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/tx_size_32"
+            android:textStyle="bold" 
+            android:layout_marginLeft="@dimen/margin_40"
+             android:layout_marginRight="@dimen/margin_40"/>
+
+        <ToggleButton
+             android:id="@+id/tb_fresh"
+            android:layout_width="@dimen/togglebutton_width"
+            android:layout_height="@dimen/togglebutton_height"
+            android:layout_toRightOf="@id/tv_fresh"
+             android:textOn=""
+            android:textOff=""
+            android:background="@drawable/togglebutton_selector"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <dimen name="gridview_columnWidth">250dp</dimen>
+    <dimen name="gridview_height">150dp</dimen>
+    
+    <dimen name="togglebutton_height">57dp</dimen>
+    <dimen name="togglebutton_width">160dp</dimen>
+    
+    <dimen name="bt_width">150dp</dimen>
+    <dimen name="bt_height">70dp</dimen>
+    
+    <dimen name="volume_hw">130dp</dimen>
+    <dimen name="audio_hw">130dp</dimen>
+    <dimen name="msr_hw">72dp</dimen>
+    <dimen name="png_hw">72dp</dimen>
+    <dimen name="png_hw2">96dp</dimen>
+    
+    <dimen name="tx_size_45">45sp</dimen>
+    <dimen name="tx_size_32">32sp</dimen>
+    <dimen name="tx_size_30">30sp</dimen>
+    <dimen name="tx_size_24">24sp</dimen>
+    <dimen name="tx_size_20">20sp</dimen>
+    <dimen name="tx_size_18">18sp</dimen>
+    <dimen name="tx_size_16">16sp</dimen>
+    <dimen name="tx_size_12">12sp</dimen>
+    <dimen name="tx_size_8">8sp</dimen>
+    
+    
+    <dimen name="margin_200">200dp</dimen>
+    <dimen name="margin_100">100dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_60">60dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+
+</resources>

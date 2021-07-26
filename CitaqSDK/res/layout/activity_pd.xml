@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_10"
+        android:layout_weight="0.5"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_8" >
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/titel_select_usborserial"
+                android:textSize="@dimen/tx_size_24" 
+                android:textColor="@android:color/black"
+                android:focusable="true" 
+                android:focusableInTouchMode="true" 
+                />
+	         <RadioGroup
+                    android:id="@+id/pd_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="2" >
+
+                    <RadioButton
+                        android:id="@+id/pd_serial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_50"
+                        android:text="@string/print_serial"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tx_size_20" 
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/pd_usb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_50"
+                        android:text="@string/print_usb"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tx_size_20" />
+
+                </RadioGroup>
+	        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_weight="2"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_recevice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:hint="@string/str_datareception"
+            android:textColor="@android:color/black" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_4"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_cmd"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:hint="@string/textstr_Cmd"
+                android:textColor="@android:color/black" 
+                android:textSize="@dimen/tx_size_16" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_send1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/spinner_cmd"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/margin_4"
+                android:layout_weight="4"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/tx_size_16" />
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/margin_4"
+                android:text="@string/btnstr_pdSendData"
+                android:textSize="@dimen/tx_size_16"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_4"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_Title"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:hint="@string/textstr_EditTitle"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/tx_size_24"  />
+
+            <Button
+                android:id="@+id/btn_setTitle"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/btnstr_setTitle"
+                android:textSize="@dimen/tx_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_send2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_4"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal" >
+
+            
+           <DigitalClock
+	        android:id="@+id/digitalClock1"
+	        android:layout_width="0dp"
+	        android:layout_weight="4"
+	        android:layout_height="fill_parent"
+			android:layout_margin="@dimen/margin_4"
+			android:textSize="@dimen/tx_size_24"
+			android:textColor="@android:color/black"
+	        android:text="@string/str_DigitalClock"/>
+
+            <Button
+                android:id="@+id/btn_setTime"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/btnstr_pdSetTime" 
+                android:textSize="@dimen/tx_size_16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/margin_4"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/et_QR"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="4"
+                android:hint="@string/textstr_QRtext"
+                android:textColor="@android:color/black"  />
+
+            <Button
+                android:id="@+id/btn_setQR"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/btnstr_sendQRtext"
+                android:textSize="@dimen/tx_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/layout_send3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_weight="1"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/margin_8"
+            android:background="@android:color/darker_gray"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_White"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+
+            <Button
+                android:id="@+id/btn_Red"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="1"
+                android:background="#ffff0000" />
+
+            <Button
+                android:id="@+id/btn_Blue"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="1"
+                android:background="#ff0000ff" />
+
+            <Button
+                android:id="@+id/btn_Green"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="1"
+                android:background="#ff00ff00" />
+
+            <Button
+                android:id="@+id/btn_Black"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_weight="1"
+                android:background="@android:color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

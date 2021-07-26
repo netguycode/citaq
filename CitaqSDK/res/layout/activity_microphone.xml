@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/white"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/img_audio_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_40"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_80" >
+
+        <Button
+            android:id="@+id/bt_audio_start"
+            android:layout_width="@dimen/bt_width"
+            android:layout_height="@dimen/bt_height"
+            android:layout_marginRight="@dimen/margin_50"
+            android:onClick="start"
+            android:textSize="@dimen/tx_size_24"
+            android:text="@string/start" />
+
+        <Button
+            android:id="@+id/bt_audio_stop"
+            android:layout_width="@dimen/bt_width"
+            android:layout_height="@dimen/bt_height"
+            android:layout_marginRight="@dimen/margin_50"
+            android:onClick="stop"
+            android:textSize="@dimen/tx_size_24"
+            android:text="@string/stop" />
+
+        <Button
+            android:id="@+id/bt_audio_play"
+            android:layout_width="@dimen/bt_width"
+            android:layout_height="@dimen/bt_height"
+            android:onClick="play"
+            android:textSize="@dimen/tx_size_24"
+            android:text="@string/play" />
+    </LinearLayout>
+
+</LinearLayout>

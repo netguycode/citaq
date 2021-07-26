@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="plain_arr">
+        <item>@color/gold</item>
+        <item>@color/purple</item> <!-- 紫 -->
+        <item>@color/orchid</item>
+        <item>@color/plum</item>
+        <item>@color/mediumorchid</item>
+        <item>@color/darkorchid</item>
+        
+        <item>@color/deeppink</item> <!-- 粉 -->
+        <item>@color/fuchsia</item>
+        <item>@color/hotpink</item>
+        <item>@color/magenta</item>
+        <item>@color/violet</item>
+        
+        <item>@color/indianred</item> <!-- 红 -->
+        <item>@color/firebrick</item>
+        <item>@color/crimson</item>
+        <item>@color/brown</item>
+        
+        <item>@color/coral</item> <!-- 橙 -->
+        <item>@color/tomato</item>
+        <item>@color/darkorange</item>
+        <item>@color/orangered</item>
+        
+        <item>@color/royalblue</item> <!-- 蓝 -->
+        <item>@color/navy</item>
+        <item>@color/mediumblue</item>
+        <item>@color/dodgerblue</item>
+        <item>@color/deepskyblue</item>
+        
+        <item>@color/darkgreen</item> <!-- 绿 -->
+        <item>@color/forestgreen</item>
+        <item>@color/limegreen</item>
+        <item>@color/seagreen</item>
+        
+        <item>@color/slategray</item> <!-- 灰 -->
+        <item>@color/dimgray</item>
+        <item>@color/darkgray</item>
+        
+        <item>@color/brown</item> <!-- 棕 -->
+        <item>@color/sienna</item>
+        <item>@color/saddlebrown</item>
+        
+        <item>@color/red</item>
+        <item>@color/yellow</item>
+        <item>@color/gray</item>
+        <item>@color/blue</item>
+    </array>
+
+</resources>

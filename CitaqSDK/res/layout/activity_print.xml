@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <!-- 第0部分 -->
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_weight="4"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_8" >
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/titel_print_usborserial"
+                android:textSize="@dimen/tx_size_30" 
+                android:textColor="@android:color/black"
+                android:focusable="true" 
+                android:focusableInTouchMode="true" 
+                />
+	        <RadioGroup
+                    android:id="@+id/print_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_weight="2" >
+
+                    <RadioButton
+                        android:id="@+id/print_serial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_50"
+                        android:text="@string/print_serial"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tx_size_20" 
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/print_usb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_50"
+                        android:text="@string/print_usb"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/tx_size_20" />
+
+                </RadioGroup>
+	        </LinearLayout>
+    </LinearLayout>
+
+     <!-- 第一部分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_weight="15"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+	            <Button
+	                android:id="@+id/btn_opencash"
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:text="@string/btnstr_opencash" 
+	                android:textSize="@dimen/tx_size_18"/>
+	            <Button
+	                android:id="@+id/btn_cutPaper"
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:text="@string/btnstr_cutpaper" 
+	                android:textSize="@dimen/tx_size_18"/>
+	            
+	        </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_getprintstatus"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/btnstr_getstatus" 
+                android:textSize="@dimen/tx_size_18"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_printtest"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btnstr_printtest" 
+                    android:textSize="@dimen/tx_size_18"/>
+
+                <Button
+                    android:id="@+id/btn_printdemo"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:text="@string/btnstr_printdemo" 
+                    android:textSize="@dimen/tx_size_18"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:layout_margin="@dimen/margin_8">
+	        <TextView
+	            android:id="@+id/tv_printReception"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:gravity="top"
+	            android:hint="@string/str_datareception"
+	            android:isScrollContainer="true"
+	            android:scrollbarStyle="insideOverlay"
+	            android:textColor="@android:color/black"
+	            android:textSize="@dimen/tx_size_16">
+	        </TextView>
+	    </ScrollView>
+    </LinearLayout>
+
+    <!-- 第二部分 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_weight="15"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="@dimen/margin_8"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_openPicture"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/btnstr_openPicture" 
+                android:textSize="@dimen/tx_size_18"/>
+
+            <Button
+                android:id="@+id/btn_printPicture"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/btnstr_printPicture" 
+                android:textSize="@dimen/tx_size_18"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageForPrint"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout> 
+    <!-- 第三部分 -->
+
+<!--     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="3"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/spinnerCP"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_setCodepage"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/btnstr_setCP" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/spinnerCS"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_setCharacterSet"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/btnstr_setCS" />
+        </LinearLayout>
+        
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Spinner
+                android:id="@+id/spinnerResidentCS"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_setResidentCharacterSet"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/btnstr_setResidentCS"/>
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_enableChinese"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/btnstr_enableChinese" />
+
+            <Button
+                android:id="@+id/btn_disableChinese"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/btnstr_disableChinese" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/btn_enableBuzzer"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/btnstr_enablebuzzer" />
+            1F 1B 1F 50 40
+
+            <Button
+                android:id="@+id/btn_disableBuzzer"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="@string/btnstr_disablebuzzer" />
+            1F 1B 1F 50 42
+
+            
+
+        </LinearLayout>
+    </LinearLayout> -->
+     <!-- 第三部分 -->
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_8"
+        android:layout_weight="4"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal" >
+        
+         <LinearLayout
+             android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" 
+            android:layout_margin="@dimen/margin_8"
+        	
+        	android:gravity="center"
+        	android:focusable="true"  
+   			android:focusableInTouchMode="true">
+
+             <!-- EditText clear
+             parent:
+			android:focusable="true"  
+   			android:focusableInTouchMode="true" -->
+            <EditText
+                android:id="@+id/et_cmd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="@string/str_cmd"
+                android:textSize="@dimen/tx_size_18"
+                 />
+
+            <Button
+                android:id="@+id/btn_cmd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btnstr_execute" 
+                android:textSize="@dimen/tx_size_18"/>
+        </LinearLayout>
+    </LinearLayout>
+     <!-- 第四部分 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_4"
+        android:layout_weight="1"
+        android:orientation="vertical" 
+        android:gravity="right|bottom">
+        <Button
+            android:id="@+id/bt_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/MoreSettings"
+            android:background="@null"
+            android:textColor="@drawable/txt_color" 
+            android:textSize="@dimen/tx_size_12"
+            android:paddingLeft="@dimen/margin_20"
+            android:paddingRight="@dimen/margin_20"/>
+</LinearLayout>
+        
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/play_pause"
+            android:checked="false"
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+            android:background="@drawable/btn_play_selector"
+            android:button="@null"
+            />
+
+        <Button
+            android:id="@+id/volume_decrease"
+            android:layout_width="@dimen/volume_hw"
+            android:layout_height="@dimen/volume_hw"
+            android:layout_margin="@dimen/margin_50"
+            android:background="@drawable/btn_volume_decrease_selector" />
+
+        <Button
+            android:id="@+id/volume_increase"
+            android:layout_width="@dimen/volume_hw"
+            android:layout_height="@dimen/volume_hw"
+            android:background="@drawable/btn_volume_increase_selector" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        	<TextView
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:gravity="center"
+		       android:text="@string/current_vol_info"
+		       android:textColor="@android:color/black"
+		       android:textSize="25sp" />
+		   <TextView
+		       android:id="@+id/tv_current_vol"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:gravity="center"
+		       android:text="@string/right_channel"
+		       android:textColor="@color/green"
+		       android:textSize="35sp" />
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <ToggleButton
+                android:id="@+id/left_vol"
+                android:layout_width="@dimen/togglebutton_width"
+		       android:layout_height="@dimen/togglebutton_height"
+                android:background="@drawable/togglebutton_selector"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/left_channel"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ToggleButton
+                android:id="@+id/right_vol"
+                android:layout_width="@dimen/togglebutton_width"
+		       android:layout_height="@dimen/togglebutton_height"
+                android:background="@drawable/togglebutton_selector"
+                android:textOff=""
+                android:textOn="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/right_channel"
+                android:textColor="@android:color/black"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

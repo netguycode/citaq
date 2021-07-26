@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">POSFactory</string>
+    <string name="save_info">The screenshot has already stored into SD Card.</string>
+    <string name="title_led">LED Test</string>
+    <string name="title_print">Print Test</string>
+    <string name="title_touch">Touch Test</string>
+    <string name="title_display">Display Test</string>
+    <string name="title_music">Audio Test</string>
+    <string name="title_pd">PD Test</string>
+    <string name="title_msr">Card Slots Test</string>
+    <string name="title_microphone">Microphone Test</string>
+    <string name="title_network">Network Test</string>
+    <string name="title_fskCaller">FSK Caller ID Test</string>
+    <string name="title_info">system information</string>
+    <string name="title_ageing">Aging Test</string>
+    <string name="red">Red Light&#160;&#160;&#160;</string>
+    <string name="blue">Blue Light&#160;&#160;</string>
+    <string name="fresh">Light Fresh</string>
+    <string name="left_channel">Left Channel</string>
+    <string name="right_channel">Right Channel</string>
+    <string name="current_vol_info"> Current volume(0~15):&#160;&#160;&#160; </string>
+    <string name="btnstr_getstatus">Real-time status transmission</string>
+    <string name="btnstr_printtest">Print self test</string>
+    <string name="btnstr_printdemo">Print demo</string>
+    <string name="btnstr_opencash">Open cash</string>
+    <string name="btnstr_cutpaper">Cut Paper</string>
+    <string name="btnstr_openPicture">Open picture </string>
+    <string name="btnstr_printPicture">Print picture</string>
+    <string name="btnstr_imageForPrint">Picture for print</string>
+    <string name="btnstr_setResidentCS">Set Resident Character</string>
+    <string name="btnstr_setPrintDensity">Set Print Density</string>   
+    <string name="btnstr_setCP">Set Codepage</string>
+    <string name="btnstr_setCS">Set Character Set</string>
+    <string name="btnstr_enableChinese">Enable Chinese Mode</string>
+    <string name="btnstr_disableChinese">Disable Chinese Mode</string>
+    <string name="btnstr_enablebuzzer">Enable Buzzer</string>
+    <string name="btnstr_disablebuzzer">Disable Buzzer</string>
+    <string name="btnstr_execute">Execute</string>
+    <string name="str_cmd">Command</string>
+    <string name="baidu">www.baidu.com</string>
+    
+    <string name="titel_select_usborserial">Serial or USB</string>
+    <string name="titel_print_usborserial">Serial or USB</string>
+    <string name="title_cmd">Command Select:</string>
+    <string name="btnstr_pdSendData">Send</string>
+    <string name="btnstr_pdSetTime">Set time for Customer display</string>
+    <string name="textstr_QRtext">QR text</string>
+    <string name="textstr_EditTitle">Edit Title</string>
+    <string name="textstr_Cmd">Command</string>
+    <string name="btnstr_sendQRtext">Send QR text</string>
+    <string name="btnstr_setTitle">Set Title</string>
+    <string name="str_datareception">Reception</string>
+    <string name="str_DigitalClock">DigitalClock</string>
+    <string name="USBEnumFinishText">Enumeration Finish！\n</string>
+    <string name="USBEnumFailText">Enumeration Fail！\n</string>
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial
+		port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown
+		reason.</string>
+    <string name="USBPDFinishText">Now,you can send data to the Customer display！\n</string>
+    <string name="USBPDFailText">Please return to the main page and come in again！\n</string>
+    <string name="InterfaceFinishText">Find the interface！\n</string>
+    <string name="InterfaceFailText">Can not find the interface！\n</string>
+    <string name="OpenFinishText">Open interface succeed！\n</string>
+    <string name="OpenFailText">Open interface failure！\n</string>
+    <string name="strFileDialogItem">Picture for path</string>
+    
+    <string name="MoreSettings"><u>&#160;&#160;More...&#160;&#160;</u></string>
+    
+    <string name="str_Clear">Clear</string>
+    
+    <string name="multi_touch_test">Please touch the screen for testing</string>
+    <string name="no_video">The external SDcard or U disk root directory must have a video file named Video_Test.</string>
+    <string name="play_tag">Play internal SDcard, external SDcard or U disk root directory named Video_Test video file; otherwise play built-in video.</string>
+    <string name="video_error">"Can't play this video."</string>
+     <string name="str_OK">OK</string>
+     
+     <string name="listening">listening</string>
+     <string name="calltime">Call time</string>
+     <string name="displaycalltime">Display Call time</string>
+     <string name="callerID">Caller ID</string>
+     <string name="displaycallnumber">Display call number</string>
+     <string name="exit">Exit</string>
+     <string name="failed">Initialization failed, cannot listen!</string>
+     
+     
+     <string name="send">Check Caller ID board.</string>
+     <string name="clear">Reset Caller ID board.</string>
+     <string name="manual">manual</string>
+     <string name="auto">auto</string>
+    
+
+    <string-array name="Codepage">
+        <item>page  0 (CP437:Standard-Europe)</item>
+        <item>page  1 (Katakana)</item>
+        <item>page  2 (CP850:Multilingual)</item>
+        <item>page  3 (CP860:Portuguese)</item>
+        <item>page  4 (CP863:Canadian-French)</item>
+        <item>page  5 (CP865:Nordic)</item>
+        <item>page  6 (West-Europe)</item>
+        <item>page  7 (Greek)</item>
+        <item>page  8 (Hebrew)</item>
+        <item>page  9 (CP755:East-Europe)</item>
+        <item>page 10 (Iran)</item>
+        <item>page 13 (CP857:Turkish)</item>
+        <item>page 14 (CP737:Greek)</item>
+        <item>page 15 (CP928:Greek)</item>
+        <item>page 16 (WCP1252)</item>
+        <item>page 17 (CP866:Cyrillic#2)</item>
+        <item>page 18 (CP852:Latin2)</item>
+        <item>page 19 (CP858)</item>
+        <item>page 21 (CP874)</item>
+        <item>page 33 (WCP775:Baltic Rim)</item>
+        <item>page 34 (CP855:Cyrillic)</item>
+        <item>page 36 (CP862:Hebrew)</item>
+        <item>page 37 (CP864:Arabic)</item>
+        <item>page 41 (CP1098:Farsi)</item>
+        <item>page 46 (WCP1251:Cyrillic)</item>
+        <item>page 47 (WCP1253:Greek)</item>
+        <item>page 48 (WCP1254:Turkish)</item>
+        <item>page 49 (WCP1255:Hebrew)</item>
+        <item>page 50 (WCP1256:Arabic)</item>
+        <item>page 51 (WCP1257:Baltic Rim)</item>
+        <item>page 254 (UTF-8)</item>
+    </string-array>
+    <string-array name="CharacterSet">
+        <item> 0：U.S.A.</item>
+        <item> 1：France</item>
+        <item> 2：Germany</item>
+        <item> 3：U.K.</item>
+        <item> 4：Denmark I</item>
+        <item> 5：Sweden</item>
+        <item> 6：Italy</item>
+        <item> 7：Spain I</item>
+        <item> 8：Japan</item>
+        <item> 9：Norway</item>
+        <item>10：Denmark II</item>
+        <item>11：Spain II</item>
+        <item>12：Latin America</item>
+        <item>13：Korea</item>
+        <item>14：Slovenia</item>
+    </string-array>
+    <string-array name="ResidentCharacterSet">
+        <item> 0：GBK Simplified Chinese</item>
+        <item> 1：BIG5 Traditional Chinese</item>
+        <item> 2：KSC5601 Korean</item>
+    </string-array>
+    <string-array name="PrintDensity">
+        <item> 0：70%</item>
+        <item> 1：75%</item>
+        <item> 2：80%</item>
+        <item> 3：85%</item>
+        <item> 4：90%</item>
+        <item> 5：95%</item>
+        <item> 6：100%</item>
+        <item> 7：105%</item>
+        <item> 8：110%</item>
+        <item> 9：115%</item>
+        <item>10：120%</item>
+        <item>11：125%</item>
+        <item>12：130%</item>
+    </string-array>
+    <string-array name="PD_type">
+        <item>Serial</item>
+        <item>USB </item>
+    </string-array>
+    <string-array name="PD_cmd">
+        <item>ESC  @\n initialize</item>
+        <item>CLR\n Clear</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test1.jpg 0DH\n 显示test1.jpg图片</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test2.jpg 0DH\n 显示test2.jpg图片</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test3.jpg 0DH\n 显示test3.jpg图片</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test1.bmp 0DH\n 显示test1.bmp图片</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test2.bmp 0DH\n 显示test2.bmp图片</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test3.bmp 0DH\n 显示test3.bmp图片</item>
+        <item>1DH 49H 42H\n Serial Number</item>
+        <item>ESC Q A 11111111 CR\n Digital display 11111111</item>
+        <item>ESC Q A 12345678 CR\n Digital display 12345678</item>
+        <item>ESC Q A 87654321 CR\n Digital display 87654321</item>
+        <item>ESC Q A 90123456 CR\n Digital display 90123456</item>
+        <item>ESC s 1\n Show U.P.</item>
+        <item>ESC s 2\n Show Total Price</item>
+        <item>ESC s 3\n Show Account</item>
+        <item>ESC s 4\n Show Change</item>
+        <item>ESC s 0\n Clear Digital display</item>
+        
+         <item>ESC s 0\n Clear Digital display</item>
+         
+         <!-- International character set -->
+         <item>1FH 1BH 1FH FDH 00H\n set International character set(ICS)</item>
+         
+         <item>1FH 1BH 1FH FEH 00H\n enable Chinese Mode</item>
+           <item>1FH 1BH 1FH FEH 01H\n disable Chinese Mode</item>
+         
+         
+         <item>1FH 1BH 1FH FFH 00H\n set Codepage(CP)</item>
+         
+          
+    </string-array>
+
+    <string name="sys_serialNo">"Serial No: "</string>
+    <string name="sys_buildID">"Build Number: "</string>
+    <string name="sys_IMEI">"IMEI: "</string>
+    <string name="sys_productName">"Product Name: "</string>
+    <string name="sys_platform">"Platform: "</string>
+    <string name="sys_android_ver">"Android Version: "</string>
+    <string name="sys_sd">"SD card total space: "</string>
+    <string name="sys_ICCID">"ICCID: "</string>
+    <string name="sys_battery_voltage">"Battery Voltage: "</string>
+    <string name="sys_battery_status">"Battery Status: "</string>
+    <string name="sys_uptime">"Uptime: "</string>
+    <string name="sys_version">"Version Name: "</string>
+    
+    
+    <string name="sys_cannotget">cannot get</string>
+    <string name="minimum_volume">Minimum volume!!!</string>
+    <string name="max_volume">Max volume!!!</string>
+    <string name="end">End</string>
+    <string name="start">start</string>
+    <string name="stop">stop</string>
+    <string name="play">play</string>
+    <string name="edit">Edit</string>
+    <string name="sure">&#160;&#160;&#160;OK&#160;&#160;&#160;</string>
+    <string name="network_info">Network Info</string>
+    <string name="network_signal_strength">Signal Strength</string>
+    <string name="time_interval">Time Interval：</string>
+    <string name="network_addr">Network Addr：</string>
+    <string name="connect_appoint_network">connect given SSID</string>
+    <string name="network_ping_result">Ping Result</string>
+    <string name="network_not_connect">Network Not Connect</string>
+    <string name="network_wifi">WiFi </string>
+    <string name="network_ethernet">Ethernet</string>
+    <string name="network_mobile">MOBILE</string>
+    <string name="network_type">Network Type</string>
+    <string name="network_Unicom_3G">Unicom 3G</string>
+    <string name="network_CMCC_3G">CMCC3G</string>
+    <string name="network_LTE">LTE</string>
+    <string name="network_ChinaMobile_Unicom_2G">ChinaMobile2G or Unicom 2G</string>
+    <string name="network_Other">Other</string>
+    <string name="total_times">Total Times</string>
+    <string name="success_times">Success Times</string>
+    <string name="fail_times">Fail Times</string>
+    <string name="success_rate">Success rate</string>
+    <string name="title_ageing_1">Print and Cut Test:</string>
+    <string name="title_ageing_2">NetWork Test:</string>
+    <string name="title_ageing_3">Video Test：</string>
+    <string name="check_blackBlock">Print Black Block</string>
+    <string name="check_greyBlock">Print Grey Block</string>
+    <string name="check_openCut">Open Cut</string>
+    <string name="start_testing">Start testing</string>
+    <string name="stop_testing">Stop testing</string>
+    <string name="ageing_network_ok">Success Times：</string>
+    <string name="ageing_success_rate">Success rate: </string>
+    <string name="ageing_network_fail">Fail Times：</string>
+    <string name="ageing_3G_restart">3G Restart Times：</string>
+    <string name="check_sound">To ring when the failure.</string>
+    <string name="ageing_3G_help">(Ps: Continuous failure ten times, 3G restart.)</string>
+    
+    <string name="speed">Speed：</string>
+    <string name="speed_1000">1000ms</string>
+    <string name="speed_3000">3000ms</string>
+    <string name="speed_5000">5000ms</string>
+    
+    <string name="print_type">"Print Type:  "</string>
+    <string name="print_serial">Serial</string>
+    <string name="print_usb">USB</string>
+    
+    <string name="nousbdevice">Can not find USB device.</string>
+
+    <string-array name="ping_time">
+        <item>10</item>
+        <item>12 </item>
+        <item>14 </item>
+        <item>16 </item>
+    </string-array>
+
+    <string name="black_block">ESC * 33D 40H 02H 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+
+FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH FFH 
+LF</string>
+    <string name="gray_block">ESC * 33D 40H 02H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+
+AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H AAH AAH AAH 55H 55H 55H 
+LF</string>
+    <string name="cut_paper">GS V 49D</string>
+    
+    <string-array name="PrinterCommand">
+        <item>LF: 0x0A</item>
+        <item>Test print</item>
+        
+    </string-array>
+
+</resources>

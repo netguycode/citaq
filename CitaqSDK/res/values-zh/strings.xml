@@ -1,0 +1,171 @@
+<resources>
+
+    <string name="app_name">安卓POS测试工具</string>
+    <string name="save_info">图片文件已保存至SD卡中</string>
+    <string name="title_led">LED测试</string>
+    <string name="title_print">打印机测试</string>
+    <string name="title_touch">触控测试</string>
+    <string name="title_display">屏幕测试</string>
+    <string name="title_music">音频测试</string>
+    <string name="title_pd">顾显测试</string>
+    <string name="title_msr">磁卡槽测试</string>
+    <string name="title_microphone">录音测试</string>
+    <string name="title_network">网络测试</string>
+    <string name="title_fskCaller">来电显示(FSK)测试</string>
+    <string name="title_info">系统信息</string>
+    <string name="title_ageing">老化测试</string>
+    
+    <string name="red">红灯测试</string>
+    <string name="blue">蓝灯测试</string>
+    <string name="fresh">闪烁测试</string>
+    <string name="left_channel">左声道</string>
+    <string name="right_channel">右声道</string>
+    <string name="current_vol_info"> 当前音量(0~15): &#160;&#160;&#160;</string>
+    
+    <string name="title_activity_serial_rp">打印机测试</string>
+    <string name="btnstr_getstatus">获得打印机状态</string>
+    <string name="btnstr_printtest">打印自检页</string>
+    <string name="btnstr_printdemo">打印小票</string>
+    <string name="btnstr_opencash">打开钱箱</string>
+    <string name="btnstr_cutpaper">打印机切纸</string>
+    <string name="btnstr_openPicture">选择图片...</string>
+    <string name="btnstr_printPicture">打印图片</string>
+    <string name="btnstr_setResidentCS">设置中文字符集</string>
+    <string name="btnstr_setPrintDensity">设置打印浓度</string>
+    <string name="btnstr_setCP">设置扩展字符集</string>
+    <string name="btnstr_setCS">设置国际字符集</string>
+    <string name="btnstr_enableChinese">开启中文模式</string>
+    <string name="btnstr_disableChinese">关闭中文模式</string>
+    <string name="btnstr_enablebuzzer">打开蜂鸣器</string>
+    <string name="btnstr_disablebuzzer">关闭蜂鸣器</string>
+    <string name="titel_select_usborserial">顾显类型：</string>
+    <string name="titel_print_usborserial">打印机类型：</string>
+    <string name="title_cmd">命令选择: </string>
+    <string name="btnstr_pdSendData">发送测试数据</string>
+    <string name="btnstr_pdSetTime">为顾显设置时间</string>
+    <string name="btnstr_setTitle">设置顾显标题</string>
+    <string name="textstr_QRtext">输入要生成的QR码内容</string>
+    <string name="btnstr_sendQRtext">生成QR码显示</string>
+    <string name="str_datareception">数据接收</string>
+    
+    <string name="USBEnumFinishText">客显枚举成功！\n</string>
+    <string name="USBEnumFailText">客显枚举失败！\n</string>
+    
+     <string name="listening">listening</string>
+     <string name="calltime">来电时间</string>
+     <string name="displaycalltime">Display Call time</string>
+     <string name="callerID">来电号码</string>
+     <string name="displaycallnumber">Display call number</string>
+     <string name="exit">Exit</string>
+     <string name="failed">初始化失败，无法监听!</string>
+     
+    <string name="send">检测来电显示控制版</string>
+    <string name="clear">初始化来电显示控制版</string>
+    <string name="manual">手动</string>
+    <string name="auto">自动</string>
+
+     <string-array name="ResidentCharacterSet">
+        <item> 0：GBK简体中文字符集</item>
+        <item> 1：BIG5繁体中文字符集</item>
+        <item> 2：KSC5601</item>
+    </string-array>
+    
+    <string-array name="PD_type">
+        <item>串口</item>
+         <item>USB</item>
+    </string-array>
+    <string-array name="PD_cmd">
+        <item>ESC  @\n 初始化</item>
+        <item>CLR\n 清屏</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test1.jpg 0DH\n 显示test1.jpg图片</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test2.jpg 0DH\n 显示test2.jpg图片</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test3.jpg 0DH\n 显示test3.jpg图片</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test1.bmp 0DH\n 显示test1.bmp图片</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test2.bmp 0DH\n 显示test2.bmp图片</item>
+        <item>1FH 50H 00H 00H 00H 00H 01H E0H 01H 10H test3.bmp 0DH\n 显示test3.bmp图片</item>
+        <item>1DH 49H 42H\n 获取顾显内部序列号</item>
+        <item>ESC Q A 11111111 CR\n 数码栏显示11111111</item>
+        <item>ESC Q A 12345678 CR\n 数码栏显示12345678</item>
+        <item>ESC Q A 87654321 CR\n 数码栏显示87654321</item>
+        <item>ESC Q A 90123456 CR\n 数码栏显示90123456</item>
+        <item>ESC s 1\n 显示单价</item>
+        <item>ESC s 2\n 显示总计</item>
+        <item>ESC s 3\n 显示收款</item>
+        <item>ESC s 4\n 显示找零</item>
+        <item>ESC s 0\n 清除状态栏显示</item>
+        <item>Chanese CP866</item>
+    </string-array>
+    
+       <!-- <string name="sys_serialNo">系统序列号:</string> -->
+    <string name="sys_ICCID">ICCID:</string>
+     <string name="sys_cannotget">无法获取</string>
+     
+      <string name="minimum_volume">当前为最小音量了!!!</string>
+    <string name="max_volume">当前为最大音量了!!!</string>
+    
+    <string name="end">结束</string>
+
+   <string name="start">开始</string>
+   <string name="stop">停止</string>
+   <string name="play">播放</string>
+   
+    <string name="edit">编辑</string>
+     <string name="sure">确定</string>
+   
+   <!-- network -->
+   <string name="network_info">网络信息</string>
+   <string name="network_signal_strength">信号强度</string>
+   <string name="time_interval">时间间隔(秒/次)：</string>
+   <string name="network_addr">测试网址：</string>
+   <string name="connect_appoint_network">连接到特定的SSID</string>
+   <string name="network_ping_result">Ping结果</string>
+   <string name="network_not_connect">当前网络不可用</string>
+   <string name="network_wifi">Wifi 网络</string>
+   <string name="network_ethernet">有线网络</string>
+   <string name="network_mobile">MOBILE</string>
+     <string name="network_type">网络类型</string>
+   
+   <string name="network_Unicom_3G">联通3G</string>
+   <string name="network_CMCC_3G">电信3G</string>
+   <string name="network_ChinaMobile_Unicom_2G">移动或者联通2G</string>
+    <string name="network_Other">其他信号</string>
+
+   
+   
+   
+   <string name="total_times">总次数</string>
+   <string name="success_times">成功次数</string>
+   <string name="fail_times">失败次数</string>
+   <string name="success_rate">成功率</string>
+   
+   <string name="title_ageing_1">切刀、打印头测试：</string>
+   <string name="title_ageing_2">网络测试情况：</string>
+   <string name="title_ageing_3">视频播放测试：</string>
+   <string name="check_blackBlock">打印黑块</string>
+   <string name="check_greyBlock">打印灰块</string> 
+   <string name="check_openCut">开启切刀</string>
+   
+   <string name="start_testing">开始测试</string>
+   <string name="stop_testing">停止测试</string>
+   
+   <string name="ageing_network_ok">成功次数：</string>
+   <string name="ageing_network_fail">失败次数：</string> 
+   <string name="ageing_success_rate">成功率: </string>
+   <string name="ageing_3G_restart">3G重启次数：</string>
+   <string name="check_sound">失败时报警。</string>
+    <string name="ageing_3G_help">（Ps: 连续失败10次，重启一次3G）</string>
+   
+    <string name="str_Clear">清空</string>
+    
+    <string name="speed">速度：</string>
+    <string name="print_type">"打印机类型:  "</string>
+    
+    <string name="multi_touch_test">请随便触摸屏幕进行测试</string>
+    
+    <string name="no_video">外置SDcard或U盘根目录必须有命名为Video_Test的视频文件。</string>
+    
+    <string name="play_tag">播放内置SDcard,外置SDcard或U盘根目录命名为Video_Test的视频文件；否则播放内置视频。</string>
+</resources>
+
+
+

@@ -55,6 +55,8 @@ This app works great as an interface between the in-built serial (thermal) print
 
 Ive included the most up to date version avaliable. See "Software' folder.
 
+## SDK
+A kind user of reddit has contacted the device maker Citaq and has forwarded on the Software Development Kit to us.
 
 ## Disclaimer
 I am not affiliated in anyway with Citaq or Menulog(AU)/JustEat(Int). I do not endorse modifying your device as it may viod any and all warranties that the device may have had prior. This may also be a breach in your Menulog(AU)/JustEat(Int) contract (if you are a resturant partner), so please proceed with caution.
