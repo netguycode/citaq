@@ -49,8 +49,10 @@ Rooting the device desent seem too difficult to do manually. The OS runs android
 Ive inclded the adb "usb drivers" I found online and anti-virus says they're clean. There is also a rockchip driver, as the page I downloaded them from refers to these as the chipset drivers, so they may become handy in the future. I'm not sure if the rockchip drivers are the correct ones as I am running a H10-3 - newer model device. https://gsmmobiledriver.com/citaq-h10
 
 ## Ionic Capacitor Plugin
+### Credit: realashleybailey
 Capacitor plugin for printing to the H10 thermal printer from inside Ionic Web App. 
 https://www.npmjs.com/package/capacitor-plugin-serialprinter
+
 https://github.com/realashleybailey/capacitor-plugin-serialprinter
 
 ## Print Proxy
