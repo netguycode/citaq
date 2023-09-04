@@ -55,6 +55,8 @@ https://www.npmjs.com/package/capacitor-plugin-serialprinter
 
 https://github.com/realashleybailey/capacitor-plugin-serialprinter
 
+- **Credit: realashleybailey**
+
 ## Printer Demo Ouput
 
 When using POSFactory app and you press the print self test, this is what you may read.
@@ -131,7 +133,6 @@ Character code table:
 
 </details>
 
-### Credit: realashleybailey
 
 ## Print Proxy
 
