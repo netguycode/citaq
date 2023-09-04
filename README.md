@@ -74,6 +74,7 @@ Note that the serial port is configured as
 
 <detail>
 <summary>Click to expand the raw OCRed text, with other detailed information that may be of relevance to developers</summary>
+	
 ```
 CTE-RP80 
 80mm Printer
@@ -127,6 +128,7 @@ Character code table:
 	page 74 (Gujarati)
 	page 254 (UTF-8)
 ```
+
 </detail>
 
 ### Credit: realashleybailey
