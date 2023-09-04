@@ -62,7 +62,7 @@ This contains useful information on how to communicate to the serial printer tha
 
 Note that the serial port is configured as 
 
-* Model: CTE-RP80 (80mm Printer)&
+* Model: CTE-RP80 (80mm Printer)
 * Version: 5.62
 * Command mode: Print speed: ESC/POS 200m (max)
 * Characters Per Line:       48
