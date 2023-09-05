@@ -1,5 +1,7 @@
 # Citaq H10 Root & Knowledge Base
 
+<img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/d53050c3-d200-4b8a-860e-46131f8c2ff4" width="300">
+
 My knowledge repository for my research on Citaq H10-3 Android All-in-one (Menulog Order Device/JustEat Order Device). This is an attempt to consolidate the information I've found on the internet regarding these devices in order to help others in the future.
 
 If theres something missing which you'd like to add, raise an issue on the github repo https://github.com/orbing/citaq/issues.
@@ -10,24 +12,37 @@ If theres something missing which you'd like to add, raise an issue on the githu
 
 ** Careful, this process may be different for you. **
 
+---
+
 ## Reboot into Recovery ROM 
 So it seems citaq have included some sort of recovery ROM once you wipe the device. As you would expect, it includes an oudated copy of Soti MobiControl software, a factory app to test the device, standard android utilities and a simple APK management utility. The factory app had a few more features than I was expecting but hinted nothing towards an SDK (I was being very hopeful.) I will include a copy of the factory app in the "software" folder in this repo.
 
 #### This is what I did to reimage my device to recovery:
 
-1. Open and lift the top panel. Extend completely - use caution and take it slow.
+<details>
+<summary> Click Here For Steps </summary>
+
+1. Open and lift the top panel. Extend completely - use caution and take it slow. Move the thermal paper roll out of the way.
+    - <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/d53050c3-d200-4b8a-860e-46131f8c2ff4" width="200"><img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/8a8e9921-f922-478a-ad63-d8532a172974" width="200"> <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/f2e5f6f5-f95a-4a67-b21d-88fe16bf7d7a" width="200">
 2. On the underside of the top panel, find a small grey rectangle that contains the words "SIM Card" and "TF Card". Uscrew this.
-3. While powered-off, locate the button under tgis panel that reads "Recovery".
+    - <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/f4aeef9e-c510-4b06-930f-6f6227facb1d" width="200"> 
+3. While powered-off, locate the button under this panel that reads "Recovery" (Silkscreen Reads: `RECOVER`).
+    - <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/ab108de2-a1ca-4b18-bd7b-7adc9ee5e7d7" width="400"> 
 4. Hold the "Recovery" button while powering-on the device - do not let go until you see the recovery menu.
-5. Plug-in a USB keyboard. Navigate to and select, "Format/Wipe Cache" and "Format/Wipe System". (See images folder for reference screen.)
-6. Navigate to "Reboot"
+    - <img src="./Images/H8aob5nm.jpg" alt="Recovery Screen" width="200">
+6. Plug-in a USB keyboard. Navigate to and select, "Format/Wipe Cache" and "Format/Wipe System".
+    - If using mouse, then move mouse up and down to move up and down and the `RECOVER` button to press enter.
+7. Navigate to "Reboot"
 
-Device successfully reimaged into recovery ROM.
+From this point the device should have successfully been reimaged from recovery ROM.
 
-|        |  |
-| ------------- | -----:|
-| ![Recovery Screen](/Images/H8aob5nm.jpg) |  |
-| ![Specs](/Images/spec.png) | |
+</details>
+
+---
+
+<img src="./Images/spec.png" alt="Specs" width="200">
+
+---
 
 I after doing this I have found Bluetooth, WiFi & Ethernet to be very buggy. I decided to look at the TF card that was attached to the device. I saw there was a copy of the MobiControl software and a random APN package. I installed the APN package and the network & wireless issues persist. I'm currently looking for solutions and/or hardware drivers on the internet (just need to crack open the device and get a few part numbers now).
 
@@ -56,6 +71,8 @@ https://www.npmjs.com/package/capacitor-plugin-serialprinter
 https://github.com/realashleybailey/capacitor-plugin-serialprinter
 
 - **Credit: realashleybailey**
+
+---
 
 ## Printer Demo Ouput
 
@@ -133,6 +150,9 @@ Character code table:
 
 </details>
 
+- **Credit: [mofosyne](https://github.com/mofosyne)**
+
+---
 
 ## Print Proxy
 
