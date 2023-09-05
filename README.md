@@ -2,22 +2,56 @@
 
 <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/d53050c3-d200-4b8a-860e-46131f8c2ff4" width="300">
 
-My knowledge repository for my research on Citaq H10-3 Android All-in-one (Menulog Order Device/JustEat Order Device). This is an attempt to consolidate the information I've found on the internet regarding these devices in order to help others in the future.
+My knowledge repository for my research on Citaq H10-3 Android All-in-one (Menulog Order Device/JustEat Order Device).
+
+This is an attempt to consolidate the information I've found on the internet regarding these devices in order to help others in the future.
 
 If theres something missing which you'd like to add, raise an issue on the github repo https://github.com/orbing/citaq/issues.
 
+---
 
 # Useful Info
-** Im using the H10-3 (Menulog-AU Order Device) **
 
-** Careful, this process may be different for you. **
+## Citaq H10-3 Spec (Menulog-AU Order Device)
+
+<details>
+<summary> Click Here For Original Spec Screenshot that this was transcribed from </summary>
+<img src="./Images/spec.png" alt="Specs" width="200">
+</details>
+
+* CPU : A9 Quad Core
+* Freqency : 1.8GHZ
+* Memory : 1GB
+* Flash : 4GB Nano
+* Storage : Maximum 32G
+* OS : Android 4.2 (Later models also include Android 5.1.1)
+* Display : 8"& 10"Vertical , 10"Horizontal resolution 1024*768
+* Touch : Screen Capacitive multi-touch
+* Speaker: Dual Track 2W
+* Indicator Light  : Programmable orage and blue
+* 3G : Supports either embedded or optional 3G
+* Wifi : Embedded WIFI 802.11b/g/n
+* Power Supply : Adapter 5V/24V dual voltage input
+* Ports : 3 USB, 1 RS232, 1 LAN, 1 RJ11
+* Printer : Integrated Seiko 80mm printer
+* Bluetooth : 2.1 & 4.0 Supported
+* Speed : 200mm/s
+* Printing Span : 200KM
+* Sensor : Out of paper, open the cover
+* Cutting Times 2 million times
+* Cutting way : Half cut / full cut
+
+## Rebooting into Recovery ROM 
+So it seems citaq have included some sort of recovery ROM once you wipe the device. As you would expect, it includes an oudated copy of Soti MobiControl software, a factory app to test the device, standard android utilities and a simple APK management utility. The factory app had a few more features than I was expecting but hinted nothing towards an SDK (I was being very hopeful.) I will include a copy of the factory app in the "software" folder in this repo.
 
 ---
 
-## Reboot into Recovery ROM 
-So it seems citaq have included some sort of recovery ROM once you wipe the device. As you would expect, it includes an oudated copy of Soti MobiControl software, a factory app to test the device, standard android utilities and a simple APK management utility. The factory app had a few more features than I was expecting but hinted nothing towards an SDK (I was being very hopeful.) I will include a copy of the factory app in the "software" folder in this repo.
+# Factory resetting CITAQ H10
 
-#### This is what I did to reimage my device to recovery:
+**Im using the H10-3 (Menulog-AU Order Device)**
+**Careful, this process may be different for you.**
+
+This is what I did to reimage my device to recovery:
 
 <details>
 <summary> Click Here For Steps </summary>
@@ -37,10 +71,6 @@ So it seems citaq have included some sort of recovery ROM once you wipe the devi
 From this point the device should have successfully been reimaged from recovery ROM.
 
 </details>
-
----
-
-<img src="./Images/spec.png" alt="Specs" width="200">
 
 ---
 
@@ -160,8 +190,12 @@ This app works great as an interface between the in-built serial (thermal) print
 
 Ive included the most up to date version avaliable. See "Software' folder.
 
+---
+
 ## SDK
 A kind user of reddit has contacted the device maker Citaq and has forwarded on the Software Development Kit to us.
 
+---
+
 ## Disclaimer
-I am not affiliated in anyway with Citaq or Menulog(AU)/JustEat(Int). I do not endorse modifying your device as it may viod any and all warranties that the device may have had prior. This may also be a breach in your Menulog(AU)/JustEat(Int) contract (if you are a resturant partner), so please proceed with caution.
+I am not affiliated in anyway with Citaq or Menulog(AU)/JustEat(Int). I do not endorse modifying your device as it may void any and all warranties that the device may have had prior. This may also be a breach in your Menulog(AU)/JustEat(Int) contract (if you are a resturant partner), so please proceed with caution.
