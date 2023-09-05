@@ -41,75 +41,8 @@ If theres something missing which you'd like to add, raise an issue on the githu
 * Cutting Times 2 million times
 * Cutting way : Half cut / full cut
 
-## Rebooting into Recovery ROM 
-So it seems citaq have included some sort of recovery ROM once you wipe the device. As you would expect, it includes an oudated copy of Soti MobiControl software, a factory app to test the device, standard android utilities and a simple APK management utility. The factory app had a few more features than I was expecting but hinted nothing towards an SDK (I was being very hopeful.) I will include a copy of the factory app in the "software" folder in this repo.
 
----
-
-# Factory resetting CITAQ H10
-
-**Im using the H10-3 (Menulog-AU Order Device)**
-**Careful, this process may be different for you.**
-
-This is what I did to reimage my device to recovery:
-
-<details>
-<summary> Click Here For Steps </summary>
-
-1. Open and lift the top panel. Extend completely - use caution and take it slow. Move the thermal paper roll out of the way.
-    - <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/d53050c3-d200-4b8a-860e-46131f8c2ff4" width="200"><img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/8a8e9921-f922-478a-ad63-d8532a172974" width="200"> <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/f2e5f6f5-f95a-4a67-b21d-88fe16bf7d7a" width="200">
-2. On the underside of the top panel, find a small grey rectangle that contains the words "SIM Card" and "TF Card". Uscrew this.
-    - <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/f4aeef9e-c510-4b06-930f-6f6227facb1d" width="200"> 
-3. While powered-off, locate the button under this panel that reads "Recovery" (Silkscreen Reads: `RECOVER`).
-    - <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/ab108de2-a1ca-4b18-bd7b-7adc9ee5e7d7" width="400"> 
-4. Hold the "Recovery" button while powering-on the device - do not let go until you see the recovery menu.
-    - <img src="./Images/H8aob5nm.jpg" alt="Recovery Screen" width="200">
-6. Plug-in a USB keyboard. Navigate to and select, "Format/Wipe Cache" and "Format/Wipe System".
-    - If using mouse, then move mouse up and down to move up and down and the `RECOVER` button to press enter.
-7. Navigate to "Reboot"
-
-From this point the device should have successfully been reimaged from recovery ROM.
-
-</details>
-
----
-
-I after doing this I have found Bluetooth, WiFi & Ethernet to be very buggy. I decided to look at the TF card that was attached to the device. I saw there was a copy of the MobiControl software and a random APN package. I installed the APN package and the network & wireless issues persist. I'm currently looking for solutions and/or hardware drivers on the internet (just need to crack open the device and get a few part numbers now).
-
-I also am looking into rooting the device manually.
-
-####  Advice found at: https://leeatljs.blogspot.com/2020/10/factory-reset-citaq-h10.html (Comments section)
-1. Go To Just Eat WiFi Settings - Go To Top Right Add Network
-2. It Will then try to load their Mobile Control App
-3. Go To Bottom left the Return Curly Arrow
-4. keep hitting it until iy takes you to the normal start page
-5. Go to Settings > Apps
-6. Uninstall all Just Eat Apps - there are about 4
-7. Then Go to do reset
-
-## Rooting the device
-Rooting the device desent seem too difficult to do manually. The OS runs android version 5.1.1 and doesnt seem to have the ability to recieve security updates automatically (an issue im keen to address, also the posibilty in updating the OS to a newer version). 
-
-#### ADB/USB Drivers
-Ive inclded the adb "usb drivers" I found online and anti-virus says they're clean. There is also a rockchip driver, as the page I downloaded them from refers to these as the chipset drivers, so they may become handy in the future. I'm not sure if the rockchip drivers are the correct ones as I am running a H10-3 - newer model device. https://gsmmobiledriver.com/citaq-h10
-
-## Ionic Capacitor Plugin
-
-Capacitor plugin for printing to the H10 thermal printer from inside Ionic Web App. 
-https://www.npmjs.com/package/capacitor-plugin-serialprinter
-
-https://github.com/realashleybailey/capacitor-plugin-serialprinter
-
-- **Credit: realashleybailey**
-
----
-
-## Printer Demo Ouput
-
-When using POSFactory app and you press the print self test, this is what you may read.
-This contains useful information on how to communicate to the serial printer that is connected internally via serial port.
-
-Note that the serial port is configured as 
+## Printer Spec 
 
 * Model: CTE-RP80 (80mm Printer)
 * Version: 5.62
@@ -120,6 +53,11 @@ Note that the serial port is configured as
 * Auto clear buffer:         No
 * NV bit image:              No
 * Serial:                    115200, None, 8, 1, DTR/DSR
+
+### How was this information obtained
+
+When using POSFactory app and you press the print self test, this is what you may read.
+This contains useful information on how to communicate to the serial printer that is connected internally via serial port.
 
 <details>
 <summary>Click to expand the raw OCRed text, with other detailed information that may be of relevance to developers</summary>
@@ -180,20 +118,85 @@ Character code table:
 
 </details>
 
-- **Credit: [mofosyne](https://github.com/mofosyne)**
-
 ---
 
-## Print Proxy
+# Factory resetting CITAQ H10
 
-This app works great as an interface between the in-built serial (thermal) printer and your device. It costs Euro14.99 and works as it says on the website. https://citaq.co.uk/
+**Im using the H10-3 (Menulog-AU Order Device)**
+**Careful, this process may be different for you.**
 
-Ive included the most up to date version avaliable. See "Software' folder.
+This is what I did to reimage my device to recovery:
+
+<details>
+<summary> Click Here For Steps </summary>
+
+1. Open and lift the top panel. Extend completely - use caution and take it slow. Move the thermal paper roll out of the way.
+    - <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/d53050c3-d200-4b8a-860e-46131f8c2ff4" width="200"><img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/8a8e9921-f922-478a-ad63-d8532a172974" width="200"> <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/f2e5f6f5-f95a-4a67-b21d-88fe16bf7d7a" width="200">
+2. On the underside of the top panel, find a small grey rectangle that contains the words "SIM Card" and "TF Card". Uscrew this.
+    - <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/f4aeef9e-c510-4b06-930f-6f6227facb1d" width="200"> 
+3. While powered-off, locate the button under this panel that reads "Recovery" (Silkscreen Reads: `RECOVER`).
+    - <img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/ab108de2-a1ca-4b18-bd7b-7adc9ee5e7d7" width="400"> 
+4. Hold the "Recovery" button while powering-on the device - do not let go until you see the recovery menu.
+    - <img src="./Images/H8aob5nm.jpg" alt="Recovery Screen" width="200">
+6. Plug-in a USB keyboard. Navigate to and select, "Format/Wipe Cache" and "Format/Wipe System".
+    - If using mouse, then move mouse up and down to move up and down and the `RECOVER` button to press enter.
+7. Navigate to "Reboot"
+
+From this point the device should have successfully been reimaged from recovery ROM.
+
+</details>
 
 ---
 
 ## SDK
-A kind user of reddit has contacted the device maker Citaq and has forwarded on the Software Development Kit to us.
+
+A kind user from reddit has contacted the device maker Citaq and has forwarded on the Software Development Kit to us.
+You can find it in the CitaqSDK folder in this repo.
+
+---
+
+# Exploration Log
+
+## Rebooting into Recovery ROM 
+So it seems citaq have included some sort of recovery ROM once you wipe the device. As you would expect, it includes an oudated copy of Soti MobiControl software, a factory app to test the device, standard android utilities and a simple APK management utility. The factory app had a few more features than I was expecting but hinted nothing towards an SDK (I was being very hopeful.) I will include a copy of the factory app in the "software" folder in this repo.
+
+## Connectivity Issues
+
+After factory resetting this device, I encountered significant connectivity issues with Bluetooth, WiFi, and Ethernet. As a part of troubleshooting, I examined the contents of the TF card attached to the device, where I discovered a copy of the MobiControl software and an unrelated APN package. Despite installing the APN package, the network and wireless problems persisted. I am currently actively seeking solutions and hardware drivers online (just need to crack open the device and get a few part numbers now).
+
+## Manual Device Rooting
+
+I am also exploring the possibility of manually rooting the device. The operating system is Android version 5.1.1, and it lacks the capability to receive automatic security updates—an issue I am keen to address.
+(An issue im keen to address, also the possibilty in updating the OS to a newer version)
+
+## ADB/USB Drivers
+
+For ADB/USB drivers, I have downloaded the ADB "usb drivers" from an online source, and they have been verified as clean by my antivirus software. Furthermore, I have acquired a rockchip driver, as the webpage where I obtained them referred to these as chipset drivers, which may prove useful in the future. However, I am unsure if the rockchip drivers are the correct ones for my H10-3, a newer model of the device. You can find these drivers at https://gsmmobiledriver.com/citaq-h10.
+
+## Ionic Framework Capacitor Plugin
+
+[Capacitor](https://capacitorjs.com/) plugin for printing to the H10 thermal printer from inside Ionic Web App.
+
+- https://www.npmjs.com/package/capacitor-plugin-serialprinter
+    - Source: https://github.com/realashleybailey/capacitor-plugin-serialprinter
+    - **Credit: realashleybailey**
+
+## Additional advice: Removing Just Eat App
+Advice found at: https://leeatljs.blogspot.com/2020/10/factory-reset-citaq-h10.html (Comments section)
+1. Go To Just Eat WiFi Settings - Go To Top Right Add Network
+2. It Will then try to load their Mobile Control App
+3. Go To Bottom left the Return Curly Arrow
+4. keep hitting it until iy takes you to the normal start page
+5. Go to Settings > Apps
+6. Uninstall all Just Eat Apps - there are about 4
+7. Then Go to do reset
+
+## Print Proxy
+
+This app serves works great as an interface for connecting your device to the built-in serial (thermal) printer. 
+It is priced at €14.99 and functions precisely as described on the [official website](https://citaq.co.uk/)
+
+I've included the most up to date version avaliable. See "Software' folder for `printproxy3.apk`.
 
 ---
 
