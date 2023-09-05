@@ -1,6 +1,6 @@
 # Citaq H10 Root & Knowledge Base
 
-<img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/d53050c3-d200-4b8a-860e-46131f8c2ff4" width="300">
+<img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/d53050c3-d200-4b8a-860e-46131f8c2ff4" height="300">
 
 My knowledge repository for my research on Citaq H10-3 Android All-in-one (Menulog Order Device/JustEat Order Device).
 
@@ -56,7 +56,12 @@ If theres something missing which you'd like to add, raise an issue on the githu
 
 ### How was this information obtained
 
-When using POSFactory app and you press the print self test, this is what you may read.
+When using POSFactory app there is a print test section. 
+
+<img src="https://github.com/mofosyne/Citaq-H10-3/assets/827793/141f3866-94f9-43d7-ac6f-25db855d4a68" height="300">
+
+From that section, when you press `PRINT SELF TEST` it will print the self test.
+
 This contains useful information on how to communicate to the serial printer that is connected internally via serial port.
 
 <details>
