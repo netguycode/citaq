@@ -127,8 +127,9 @@ Character code table:
 
 # Factory resetting CITAQ H10
 
-**Im using the H10-3 (Menulog-AU Order Device)**
-**Careful, this process may be different for you.**
+**Note that I am using the H10-3 (Menulog-AU Order Device)**
+
+**Becareful, this process may be different for you.**
 
 This is what I did to reimage my device to recovery:
 
