@@ -6,7 +6,7 @@ My knowledge repository for my research on Citaq H10-3 Android All-in-one (Menul
 
 This is an attempt to consolidate the information I've found on the internet regarding these devices in order to help others in the future.
 
-If theres something missing which you'd like to add, raise an issue on the github repo https://github.com/orbing/citaq/issues.
+If theres something missing which you'd like to add, raise an issue on the github repo https://github.com/orbin/citaq/issues.
 
 ---
 
