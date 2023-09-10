@@ -12,7 +12,8 @@ If theres something missing which you'd like to add, raise an issue on the githu
 
 * [Factory Reset Guide](./factory_reset_guide.md)
 * [Printer Specification](./printer_spec.md)
-* [Exporation Log - Net Guy](./netguy-exploration-log.md)
+* [Exploration Log - Net Guy](./netguy-exploration-log.md)
+* [Exploration Log - Mofosyne](./mofosyne-exploration-log.md)
 
 ---
 
@@ -44,7 +45,6 @@ If theres something missing which you'd like to add, raise an issue on the githu
 
 These spec was originally transcribed from `./Images/spec.png`
 
-
 ## Printer Spec 
 
 * Model: CTE-RP80 (80mm Printer)
@@ -57,6 +57,51 @@ These spec was originally transcribed from `./Images/spec.png`
 * NV bit image:              No
 * Serial:                    115200, None, 8, 1, DTR/DSR
 
+---
+
+# Android Linux
+
+### Hardware CPU/Board types
+
+| getCpuHardware() Recognised Board Type | hardware ID string (/proc/cpuinfo) |
+|----------------------------------------|------------------------------------|
+| SMDKV210                               | `SMDKV210`                         |
+| RK3188                                 | `RK30BOARD`                        |
+| RK30BOARD                              | `SUN50IW1P1`                       |
+| MSM8625Q                               | `QRD MSM8625Q SKUD`                |
+| RK3368                                 | `RK3368`                           |
+
+### Hardware GPIO and interfaces
+
+ - CTE-RP80 Internal Printer Serial Port
+    - path: `/dev/ttyS1`
+    - baud: 115200
+    - flag: none
+    - flow control: enabled
+    - Uses ESC/POS protocol
+
+ - LED Status Bar
+    - MainBoardUtil.RK3188 or MainBoardUtil.RK30BOARD
+        - RED: `/sys/class/gpio/gpio190/value`
+        - BLUE: `/sys/class/gpio/gpio172/value`
+    - MainBoardUtil.RK3368
+        - RED: `/sys/class/gpio/gpio124/value`
+        - BLUE: `/sys/class/gpio/gpio106/value`
+
+### Possible Serial Ports (As shown in SDK)
+
+| CitaqApplication.java func() | Serial Port Devices |   Baud | Flow Control | What it was used for in SDK           |
+|------------------------------|---------------------|--------|--------------|---------------------------------------|
+| getPrintSerialPort()         |        '/dev/ttyS1` | 115200 |         true | Internal Thermal Printer              |
+| getPrintSerialPortMT()       |       '/dev/ttyMT0` | 115200 |         true | Unknown Usage                         |
+| getMSRSerialPort()           |        '/dev/ttyS2` |  19200 |        false | Magnetic Stripe Reader                |
+| getCtmDisplaySerialPort()    |        '/dev/ttyS3` |   9600 |        false | FSK Caller ID, ESC/POS Printer Device |
+| getMSRSerialPort_S4()        |        '/dev/ttyS4` |  19200 |        false | Magnetic Stripe Reader                |
+
+### SDK POSFactory App Sourcecode of interest:
+
+ - Print to internal printer test page handler: `./CitaqSDK/src/com/citaq/citaqfactory/PrintActivity.java`
+ - Set status LED bar handler: `./CitaqSDK/src/com/citaq/citaqfactory/LedActivity.java`
 
 ---
 
@@ -94,9 +139,6 @@ Contains various useful software useful in the investigation / development / usa
  - Included the latest available version in the "Software" folder as printproxy3.apk.
    - Priced at €14.99 for full version from them
  - [official website](https://citaq.co.uk/)
-
-
-
 
 ---
 
