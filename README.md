@@ -98,10 +98,6 @@ These spec was originally transcribed from `./Images/spec.png`
 | getCtmDisplaySerialPort()    |        '/dev/ttyS3` |   9600 |        false | FSK Caller ID, ESC/POS Printer Device |
 | getMSRSerialPort_S4()        |        '/dev/ttyS4` |  19200 |        false | Magnetic Stripe Reader                |
 
-### SDK POSFactory App Sourcecode of interest:
-
- - Print to internal printer test page handler: `./CitaqSDK/src/com/citaq/citaqfactory/PrintActivity.java`
- - Set status LED bar handler: `./CitaqSDK/src/com/citaq/citaqfactory/LedActivity.java`
 
 ---
 
@@ -112,6 +108,10 @@ These spec was originally transcribed from `./Images/spec.png`
 A kind user from reddit has contacted the device maker Citaq and has forwarded on the Software Development Kit to us.
 You can find it in the CitaqSDK folder in this repo.
 
+### SDK POSFactory App Sourcecode of interest:
+
+ - Print to internal printer test page handler: `./CitaqSDK/src/com/citaq/citaqfactory/PrintActivity.java`
+ - Set status LED bar handler: `./CitaqSDK/src/com/citaq/citaqfactory/LedActivity.java`
 
 ---
 
