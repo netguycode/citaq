@@ -45,7 +45,7 @@ If theres something missing which you'd like to add, raise an issue on the githu
 
 These spec was originally transcribed from `./Images/spec.png`
 
-## Printer Spec 
+## Printer Spec
 
 * Model: CTE-RP80 (80mm Printer)
 * Version: 5.62
@@ -61,32 +61,100 @@ These spec was originally transcribed from `./Images/spec.png`
 
 # Android Linux
 
-### Hardware CPU/Board types
+### Hardware CPU/Board Identification Method
 
-| getCpuHardware() Recognised Board Type | hardware ID string (/proc/cpuinfo) |
-|----------------------------------------|------------------------------------|
-| SMDKV210                               | `SMDKV210`                         |
-| RK3188                                 | `RK30BOARD`                        |
-| RK30BOARD                              | `SUN50IW1P1`                       |
-| MSM8625Q                               | `QRD MSM8625Q SKUD`                |
-| RK3368                                 | `RK3368`                           |
+We can check the hardware ID of a CITAQ device by checking the `Hardware` field in `/proc/cpuinfo`.
+
+E.g. In a CITAQ H10-3, when `cat /proc/cpuinfo | grep 'Hardware'` is executed you get `Hardware	: rockchip,rk3368`.
+
+The SDK typically checks if the board type matches via checking if the hardware ID string matches the output of getCpuHardware()
+(e.g: `MainBoardUtil.getCpuHardware().contains('RK3368')`) (Refer to the SDK Board type table for all possible board types)
+
+You can emulate this SDK function in android shell via this bash function for your own purpose (e.g. calling via javascript android frameworks)
+
+```bash
+function getCpuHardware { cat /proc/cpuinfo | grep 'Hardware' | cut -d':' -f2 | cut -d',' -f2 | tr -d '[:space:]' | tr '[:lower:]' '[:upper:]'; }
+getCpuHardware # call get cpu hardware check
+```
+
 
 ### Hardware GPIO and interfaces
 
- - CTE-RP80 Internal Printer Serial Port
+#### CTE-RP80 Internal Printer Serial Port
     - path: `/dev/ttyS1`
     - baud: 115200
     - flag: none
     - flow control: enabled
     - Uses ESC/POS protocol
 
- - LED Status Bar
+Shell example for controlling the printer on a CITAQ H10-3 (with RK3368)
+
+```bash
+#[Set serial port speed]
+#stty -F /dev/ttyS1 115200; # Missing from Android 6.0 toybox (Added on Android 9.0 (Pie) onward)
+#[Enable serial port flow control]
+#stty -F /dev/ttyS1 ixon # Missing from Android 6.0 toybox (Added on Android 9.0 (Pie) onward)
+
+#Note: Looks like /dev/ttyS1 is already configured by CITAQ android distro with the correct settings on boot.
+
+# Gather information
+hardwareID=$(cat /proc/cpuinfo | grep 'Hardware')
+eth0_ip4=$(ifconfig eth0 | grep -o 'inet addr:[0-9.]*'| cut -d':' -f2)
+wlan0_ip4=$(ifconfig wlan0 | grep -o 'inet addr:[0-9.]*'| cut -d':' -f2)
+locdate=$(date)
+#[Send print test to the printer]
+#initialize printer
+echo -e '\x1b\x40'>/dev/ttyS1
+# send printer data
+echo -e '\x1b\x45 CITAQ Hardware Test:\x1b\x46\xa'>/dev/ttyS1
+echo -e $locdate'' >/dev/ttyS1
+echo -e $hardwareID'' >/dev/ttyS1
+echo -e 'Hostname: '$HOSTNAME'' >/dev/ttyS1
+echo -e 'eth0 IP address: '$eth0_ip4''>/dev/ttyS1
+echo -e 'wlan0 IP address: '$wlan0_ip4''>/dev/ttyS1
+
+# Barcode
+echo -e '\x1d\x6b\x04000\x00'>/dev/ttyS1 # Not sure on this format... but it works...
+
+# Code 39 Barcode [0x1D, 'h', <height>, 0x1D, 'w', <width>, 0x1D, 'H', <textHeight>, 0x1D, 'k', 0x45, <payloadLen>, <payloadData>...] (SDK: PrintBarcode() )
+#echo -e '\x1dh\x60''\x1dw\x02''\x1dH\x02''\x1dk\x45''\x0cHello World'>/dev/ttyS1 # Not yet working...
+
+# QR Code [0x1B, 0x51, 0x52, 0x03 : Error Correction layer, String Length (High), String Length (Low), string data ... (SDK: getSendQRCmd() )
+#echo -e '\x1b\x51\x52\x03\x00\x0bHello World'>/dev/ttyS1 # Not yet working...
+
+# Send Cut Command ; GS V 66D 0D [0x1D, 0x56, 0x42, 0x00] (SDK: CutPaper() )
+echo -e '\x1d\x56\x42\x00'>/dev/ttyS1
+
+# Open Cash Register ; DLE DC4 n m t [0x1B, 0x70, 0x00, 0xC0, 0xC0] (SDK: OpenCash() )
+echo -e '\x1B\x70\x00\xC0\xC0'>/dev/ttyS1
+
+# Enable Buzzer [1F 1B 1F 50 40] (SDK: getBuzzer() )
+echo -e '\x1F\x1B\x1F\x50\x40'>/dev/ttyS1
+
+# Disable Buzzer [1F 1B 1F 50 42] (SDK: getBuzzer() )
+echo -e '\x1F\x1B\x1F\x50\x42'>/dev/ttyS1 # Not sure on the point of this command... still beeps
+```
+
+#### LED Status Bar
     - MainBoardUtil.RK3188 or MainBoardUtil.RK30BOARD
         - RED: `/sys/class/gpio/gpio190/value`
         - BLUE: `/sys/class/gpio/gpio172/value`
     - MainBoardUtil.RK3368
         - RED: `/sys/class/gpio/gpio124/value`
         - BLUE: `/sys/class/gpio/gpio106/value`
+
+Shell example for controlling LED on a CITAQ H10-3 (with RK3368)
+
+```bash
+# Turn on red
+echo "1" > /sys/class/gpio/gpio124/value
+# Turn off red
+echo "0" > /sys/class/gpio/gpio124/value
+# Turn on blue
+echo "1" > /sys/class/gpio/gpio106/value
+# Turn off blue
+echo "0" > /sys/class/gpio/gpio106/value
+```
 
 ### Possible Serial Ports (As shown in SDK)
 
@@ -108,10 +176,21 @@ These spec was originally transcribed from `./Images/spec.png`
 A kind user from reddit has contacted the device maker Citaq and has forwarded on the Software Development Kit to us.
 You can find it in the CitaqSDK folder in this repo.
 
+### SDK Board type table
+
+| SDK Recognised Board Type | hardware ID string (/proc/cpuinfo) |
+|---------------------------|------------------------------------|
+| MainBoardUtil.SMDKV210    | `SMDKV210`                         |
+| MainBoardUtil.RK3188      | `RK30BOARD`                        |
+| MainBoardUtil.RK30BOARD   | `SUN50IW1P1`                       |
+| MainBoardUtil.MSM8625Q    | `QRD MSM8625Q SKUD`                |
+| MainBoardUtil.RK3368      | `RK3368`                           |
+
 ### SDK POSFactory App Sourcecode of interest:
 
  - Print to internal printer test page handler: `./CitaqSDK/src/com/citaq/citaqfactory/PrintActivity.java`
- - Set status LED bar handler: `./CitaqSDK/src/com/citaq/citaqfactory/LedActivity.java`
+ - Set status LED bar han
+ dler: `./CitaqSDK/src/com/citaq/citaqfactory/LedActivity.java`
 
 ---
 
