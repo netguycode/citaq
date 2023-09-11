@@ -156,16 +156,6 @@ echo "1" > /sys/class/gpio/gpio106/value
 echo "0" > /sys/class/gpio/gpio106/value
 ```
 
-### Possible Serial Ports (As shown in SDK)
-
-| CitaqApplication.java func() | Serial Port Devices |   Baud | Flow Control | What it was used for in SDK           |
-|------------------------------|---------------------|--------|--------------|---------------------------------------|
-| getPrintSerialPort()         |        '/dev/ttyS1` | 115200 |         true | Internal Thermal Printer              |
-| getPrintSerialPortMT()       |       '/dev/ttyMT0` | 115200 |         true | Unknown Usage                         |
-| getMSRSerialPort()           |        '/dev/ttyS2` |  19200 |        false | Magnetic Stripe Reader                |
-| getCtmDisplaySerialPort()    |        '/dev/ttyS3` |   9600 |        false | FSK Caller ID, ESC/POS Printer Device |
-| getMSRSerialPort_S4()        |        '/dev/ttyS4` |  19200 |        false | Magnetic Stripe Reader                |
-
 
 ---
 
@@ -175,6 +165,11 @@ echo "0" > /sys/class/gpio/gpio106/value
 
 A kind user from reddit has contacted the device maker Citaq and has forwarded on the Software Development Kit to us.
 You can find it in the CitaqSDK folder in this repo.
+
+### SDK POSFactory App Sourcecode of interest:
+
+ - Print to internal printer test page handler: `./CitaqSDK/src/com/citaq/citaqfactory/PrintActivity.java`
+ - Set status LED bar handler: `./CitaqSDK/src/com/citaq/citaqfactory/LedActivity.java`
 
 ### SDK Board type table
 
@@ -186,11 +181,16 @@ You can find it in the CitaqSDK folder in this repo.
 | MainBoardUtil.MSM8625Q    | `QRD MSM8625Q SKUD`                |
 | MainBoardUtil.RK3368      | `RK3368`                           |
 
-### SDK POSFactory App Sourcecode of interest:
+### Possible Serial Ports (As shown in SDK)
 
- - Print to internal printer test page handler: `./CitaqSDK/src/com/citaq/citaqfactory/PrintActivity.java`
- - Set status LED bar han
- dler: `./CitaqSDK/src/com/citaq/citaqfactory/LedActivity.java`
+| CitaqApplication.java func() | Serial Port Devices |   Baud | Flow Control | What it was used for in SDK           |
+|------------------------------|---------------------|--------|--------------|---------------------------------------|
+| getPrintSerialPort()         |        '/dev/ttyS1` | 115200 |         true | Internal Thermal Printer              |
+| getPrintSerialPortMT()       |       '/dev/ttyMT0` | 115200 |         true | Unknown Usage                         |
+| getMSRSerialPort()           |        '/dev/ttyS2` |  19200 |        false | Magnetic Stripe Reader                |
+| getCtmDisplaySerialPort()    |        '/dev/ttyS3` |   9600 |        false | FSK Caller ID, ESC/POS Printer Device |
+| getMSRSerialPort_S4()        |        '/dev/ttyS4` |  19200 |        false | Magnetic Stripe Reader                |
+
 
 ---
 
